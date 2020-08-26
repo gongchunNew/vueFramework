@@ -1,27 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+// 自动引入所有的模块
+const modules = require.context('./modules', false, /.js$/)
+const routes = modules.keys().reduce((result, fileName) => {
+  result = [...result, ...modules(fileName).default]
+  return result
+}, [])
 
+// 创建router对象
 const router = new VueRouter({
-  routes
+  routes: routes
 })
 
 export default router
