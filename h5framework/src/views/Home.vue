@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <div class="home1">home</div>
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -20,5 +21,8 @@ export default {
 .home{
   @include display-flex;
   color:$color-theme;
+  .home1{
+    font-size: 16px;
+  }
 }
 </style>
