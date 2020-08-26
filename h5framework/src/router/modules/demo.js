@@ -2,7 +2,7 @@
 
 const dome = [
   {
-    name: 'dome',
+    name: 'domehome',
     path: '/demo/demohome',
     meta: {
       title: 'demo主页',

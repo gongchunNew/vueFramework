@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      home
+      <span @click="topage()">点击</span>
   </div>
 </template>
 
@@ -14,7 +14,12 @@ export default {
   },
   watch: {},
   computed: {},
-  methods: {},
+  methods: {
+    topage () {
+      console.log(this.globalConfig)
+      this.go('domehome')
+    }
+  },
   created () {},
   mounted () {}
 }
