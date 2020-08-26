@@ -16,3 +16,9 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.home{
+  @include display-flex;
+  color:$color-theme;
+}
+</style>

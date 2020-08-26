@@ -1,0 +1,30 @@
+/* ------------------------------------------ scss var ------------------------------------------ */
+
+$design-width: 375; // 设计稿宽度
+
+// 颜色相关
+$color-theme: #008ef0;  // 主题色
+$color-theme-light: #00d5fd;  // 主题色-亮
+$color-theme-dark: #007fd7; // 主题色-暗
+$color-success: #52c750;  // 成功色
+$color-error: #f33;  // 失败色
+$color-warn: #fdd835; // 警告色
+$color-bg: #fff; // 背景色
+$color-app-bar: #f9f9f9;  // app-bar颜色
+$color-wechat-bg: #ededed;  // 微信背景色
+
+// z-index相关
+$zIndex-app-bar: 2;
+$zIndex-modal: 999;
+$zIndex-tips: 1000;
+$zIndex-popup: 998;
+
+// 高度相关
+$height-app-bar: 50px;
+
+// iphone相关
+$safe-top-full-screen: 44px;  // iphone全面屏顶部安全距离--状态栏高度为44px
+$safe-bottom-full-screen: 83px; // iphone全面屏底部安全距离
+$safe-top-normal: 20px; // iphone其他机型顶部安全距离--状态栏高度为20px
+$safe-bottom-normal: 49px; // iphone其他机型底部安全距离
+$safe-top-ipad: 20px; // ipad顶部安全距离--状态栏高度为20px
