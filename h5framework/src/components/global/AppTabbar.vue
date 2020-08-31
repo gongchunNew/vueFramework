@@ -1,14 +1,17 @@
 <template>
-  <!-- <span class="icon iconfont icon-aixin"></span> -->
-  <span></span>
+  <div class="app-tabbar">
+
+  </div>
 </template>
 
 <script>
 export default {
+  name: 'appTabbar',
   components: {},
   props: {},
   data () {
-    return {}
+    return {
+    }
   },
   watch: {},
   computed: {},
@@ -18,7 +21,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.demo {
-  font-size: 20px;
+.app-tabbar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
 }
 </style>

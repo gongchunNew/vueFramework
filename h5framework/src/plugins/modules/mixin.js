@@ -3,11 +3,12 @@
  */
 
 import Vue from 'vue'
+import globalConfig from '@/assets/global/globalConfig'
 
 Vue.mixin({
   data () {
     return {
-      globalConfig: '111111'
+      globalConfig: globalConfig
     }
   },
   methods: {
