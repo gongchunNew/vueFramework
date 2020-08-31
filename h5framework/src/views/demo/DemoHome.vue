@@ -1,6 +1,6 @@
 <template>
-  <!-- <span class="icon iconfont icon-aixin"></span> -->
-  <span></span>
+  <span class="iconfont icon-aixin"></span>
+
 </template>
 
 <script>

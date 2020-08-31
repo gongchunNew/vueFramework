@@ -3,7 +3,7 @@
 const home = [
   {
     name: 'home',
-    path: '/',
+    path: '/home',
     meta: {
       title: '主页',
       ignoreWechatShare: true
