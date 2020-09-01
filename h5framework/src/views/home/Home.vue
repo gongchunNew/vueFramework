@@ -34,7 +34,7 @@ export default {
   computed: {},
   methods: {
     topage () {
-      console.log(this.globalConfig)
+      // console.log(this.globalConfig)
       this.go('domehome')
     }
   },

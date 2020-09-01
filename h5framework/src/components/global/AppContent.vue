@@ -1,24 +1,26 @@
 <template>
-  <div></div>
+  <article class="app-content">
+    <!-- 内容插槽 -->
+    <slot></slot>
+  </article>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+  name: 'appContent',
   props: {},
   data () {
     return {}
   },
-  watch: {},
   computed: {},
-  methods: {},
+  watch: {},
   created () {},
-  mounted () {}
+  methods: {}
 }
 </script>
+
 <style lang="scss" scoped>
-.demo {
-  font-size: 20px;
+.app-content {
+  position: relative;
 }
 </style>

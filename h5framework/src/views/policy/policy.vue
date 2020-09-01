@@ -1,10 +1,14 @@
 <template>
-  <div></div>
+  <Page :withAppBar="globalConfig.inApp">
+    <div class="wrapper">policy</div>
+  </Page>
 </template>
 
 <script>
+import Page from '@/components/global/Page'
 export default {
   components: {
+    Page
   },
   props: {},
   data () {
@@ -18,7 +22,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.demo {
-  font-size: 20px;
+.wrapper {
+    background-color: yellow;
 }
 </style>

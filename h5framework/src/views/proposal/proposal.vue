@@ -1,14 +1,14 @@
 <template>
-  <div></div>
+  <div class="wrapper">proposal</div>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+  components: {},
   props: {},
   data () {
-    return {}
+    return {
+    }
   },
   watch: {},
   computed: {},
@@ -18,7 +18,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.demo {
-  font-size: 20px;
-}
+.wrapper{}
 </style>
