@@ -1,5 +1,5 @@
 <template>
-  <div class="app-tabbar">
+  <div class="app-tabbar" :style="{ height: globalConfig.ui.heightAppBar + globalConfig.ui.safeBottom + 'px' }">
     <div class="tabbar-item" v-for="(tab ,index) in tabArray" :key="index" @click="switchTo(tab)">
       <img :src="tab.path === $route.name ? tab.select : tab.normal" class="item-img"/>
       <span :class="{ on: tab.path === $route.name }" class="item-text">{{ tab.name }}</span>

@@ -27,12 +27,14 @@ const globalConfig = {
     clientWidth: 0, // 视口宽度，需动态计算(为真实px值)
     clientHeight: 0, // 视口高度，需动态计算(为真实px值)
     safeTop: 0, // 顶部安全距离，只在ios下的app中有不为0的值(为真实px值)
+    safeBottom: 0, // 底部安全距离，只在ios下的app中有不为0的值(为真实px值)
     topRemain: 0, // 顶部安全距离 + appBar高度(上部的保留高度，为真实px值)
 
     // 以下尺寸与vars.scss保持一致
     heightAppBar: 50, // app bar高度(为设计稿宽度下的px值)
+    heightAppTabbar: 49, // app tabbar高度(为设计稿宽度下的px值)
     safeTopFullScreen: 44, // iphone全面屏顶部安全距离--状态栏高度为44px(为真实px值)
-    safeBottomFullScreen: 83, // iphone全面屏底部安全距离(为真实px值)
+    safeBottomFullScreen: 34, // iphone全面屏底部安全距离(为真实px值)
     safeTopNormal: 20, // iphone其他机型顶部安全距离--状态栏高度为20px(为真实px值)
     safeTopIpad: 20, // ipad顶部安全距离--状态栏高度为20px(为真实px值)
 

@@ -17,6 +17,7 @@ export const setGlobalConfigUi = () => {
 
   // 设置顶部安全距离safeTop
   let safeTop = 0
+  let safeBottom = 0
   if (globalConfig.inApp) {
     // app端
     if (globalConfig.inIPhone && !globalConfig.inIPhoneFullScreen) {
@@ -25,13 +26,14 @@ export const setGlobalConfigUi = () => {
     } else if (globalConfig.inIPhone && globalConfig.inIPhoneFullScreen) {
       // iphone全面屏
       safeTop = ui.safeTopFullScreen
+      safeBottom = ui.safeBottomFullScreen
     } else if (globalConfig.inIpad) {
       // ipad
       safeTop = ui.safeTopIpad
     }
   }
   ui.safeTop = safeTop
-
+  ui.safeBottom = safeBottom
   // 设置上部的保留高度topRemain(顶部安全距离safeTop + appBar高度)
   let topRemain = ui.safeTop
   if (globalConfig.inApp) {
