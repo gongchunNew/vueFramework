@@ -1,5 +1,5 @@
 <template>
-  <main class="page" :class="{ 'with-app-bar': withAppBar }" :style="pageStyle">
+  <main class="page" :class="{ 'with-app-bar': withAppBar,'with-app-tabbar':withAppTabbar }" :style="pageStyle">
     <!-- ios app顶部安全距离预留块 -->
     <div
       class="safe-top"
@@ -18,6 +18,11 @@ export default {
     withAppBar: {
       type: Boolean,
       default: false
+    },
+    // 是否带appTabbar
+    withAppTabbar: {
+      type: Boolean,
+      default: false
     }
   },
   data () {
@@ -33,7 +38,8 @@ export default {
         minHeight:
           this.globalConfig.os === 'ios'
             ? '100vh'
-            : this.globalConfig.ui.initHeight + 'px'
+            : this.globalConfig.ui.initHeight + 'px',
+        paddingBottom: this.withAppTabbar ? this.globalConfig.ui.heightAppTabbar + this.globalConfig.ui.safeBottom + 'px' : 0 + 'px'
       }
       return pageStyle
     }

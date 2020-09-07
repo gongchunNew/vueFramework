@@ -1,5 +1,8 @@
 // vue.config.js
 module.exports = {
+  publicPath: './',
+  assetsDir: 'static',
+  outputDir: 'dist',
   chainWebpack: config => {
     const oneOfsMap = config.module.rule('scss').oneOfs.store
     oneOfsMap.forEach(item => {
