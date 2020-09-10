@@ -14,12 +14,8 @@
   </div>
 </template>
 <script>
-import AppBar from '@/components/global/AppBar'
-import AppTabbar from '@/components/global/AppTabbar'
 export default {
   components: {
-    AppTabbar,
-    AppBar
   },
   props: {},
   data () {

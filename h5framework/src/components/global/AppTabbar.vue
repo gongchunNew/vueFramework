@@ -46,6 +46,7 @@ export default {
   computed: {},
   methods: {
     switchTo (obj) {
+      if (this.$route.name === obj.path) return
       this.go(obj.path)
     }
   },
